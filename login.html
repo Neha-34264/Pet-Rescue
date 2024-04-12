@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPet--!</title>
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <link rel="icon" type="image/png" href="logoooo.avif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about us.css">
+    <link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="formvalidation.js">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/js/bootstrap.min.js">
+
+    <style>
+        .story-section {
+            text-align: center;
+            /* Center align the content */
+        }
+
+        .story-paragraph {
+            text-align: justify;
+            text-align: left;
+            /* Justify the text for better readability */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html">
+                    <div class="logo"></div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="About us.html">About</a></li>
+                <li class="nav-link"><a href="helpus.html">Help Us</a></li>
+                <li class="nav-link"><a href="blogs.html">Blogs</a></li>
+                <li class="nav-link"><a href="profile.html">Profile</a></li>
+            </ul>
+            <a href="login.html" class="contact-button">Login</a>
+        </nav>
+   
+    <br><br><br><br>
+    <form>
+        <h1>Pet Rescue Form</h1>
+        <div>
+            <label for="name" style="font-weight: bold;">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+            <label for="breed" style="font-weight: bold;">Breed Name:</label>
+            <input type="text" id="breed" name="breed" required>
+        </div>
+
+        <div>
+            <label for="email" style="font-weight: bold;">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="password" style="font-weight: bold;">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div>
+            <label style="font-weight: bold;">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <label style="font-weight: bold;">Spray/Neutered:</label>
+            <input type="radio" id="yes" name="spray" value="yes" required>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="spray" value="no" required>
+            <label for="no">No</label>
+        </div>
+
+        <div>
+            <label for="weight" style="font-weight: bold;">Weight:</label>
+            <input type="radio" id="under_10kg" name="weight" value="under_10kg" required>
+            <label for="under_10kg">Under 10kg</label>
+            <input type="radio" id="10-20kg" name="weight" value="10-20kg" required>
+            <label for="10-20kg">10-20kg</label>
+            <input type="radio" id="20-30kg" name="weight" value="20-30kg" required>
+            <label for="20-30kg">20-30kg</label>
+            <input type="radio" id="over_30kg" name="weight" value="over_30kg" required>
+            <label for="over_30kg">Over 30kg</label>
+        </div>
+
+        <div>
+            <label for="additional" style="font-weight: bold;">Additional Information:</label>
+            <textarea id="additional" name="additional" rows="4"></textarea>
+        </div>
+        <br>
+        <div class="button-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <br><br><br>
+    <div class="loccontainer">
+        <div class="map">
+            <!-- Embed Google Map here -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.152675581692!2d71.70685717606632!3d29.39508944904361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b90f6b1c8cee5%3A0xb4eebb3127d47142!2sSajid%20Awan%20Town%20Bahawalpur%2C%20Punjab%2063100%2C%20Pakistan!5e0!3m2!1sen!2s!4v1712409525743!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+<br><br><br><br>
+<section class="footer">
+    <footer>
+        <footer>
+            <div class="left-footer">
+                <div class="subscribe-text" style="font-size: 30px;">Subscribe for amazing offers</div>
+                <div class="Lorem-ipsum">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra
+                    augue.
+                    Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.
+                </div>
+                <input type="email" placeholder="Enter your email" class="email-input">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-snapchat"></i></a>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div class="footer-list">
+                    <h3 style="text-align: center;">Get to Know us</h3>
+                    <ul style="text-align: center;">
+                        <li><a href="index.html" style="text-decoration: none; color: white;">Home</a></li>
+                        <li><a href="About us.html" style="text-decoration: none; color: white;">About</a></li>
+                        <li><a href="#" style="text-decoration: none; color: white;">Help Us</a></li>
+                        <li><a href="#" style="text-decoration: none; color: white;">Blogs</a></li>
+                        <li><a href="profile.html" style="text-decoration: none; color: white;">Profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3 style="text-align: center; margin-left: 20px;">Quick Links</h3>
+                    <ul style="text-align: center;">
+                        <li><a href="#" style="text-decoration: none; color: white;">My Account</a></li>
+                        <li><a href="#" style="text-decoration: none; color: white;">Wishlist</a></li>
+                        <li><a href="#" style="text-decoration: none; color: white;">Cart</a></li>
+                        <li><a href="#" style="text-decoration: none; color: white;">Lorem ipsum</a></li>
+                        <li><a href="#" style="text-decoration: none; color: white;">Lorem ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3 style="text-align: center; margin-left: 19px;">Policies</h3>
+                    <ul style="text-align: center;">
+                        <li><a href="#" style="text-decoration: none; color: white;">Refund Policy</a></li>
+                        <li><a href="#" style="text-decoration: none; color: white;">Privacy Policy</a></li>
+                       <li><a href="#" style="text-decoration: none; color: white;">Terms of us</a></li> 
+                       <li> <a href="#" style="text-decoration: none; color: white;">Loremm ipsum</a></li>
+                       <li><a href="#" style="text-decoration: none; color: white;">Lorem ipsum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="hours">
+                    <p style="font-weight: bold;">Monday - Sunday <br> 9:00 AM - 7:00 PM</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </footer>
+
+</section>
+    </header>
+</body>
+
+</html>

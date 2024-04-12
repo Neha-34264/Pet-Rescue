@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    height: 120px;
+    border-bottom: 1px solid #000000; /* Black border bottom */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav-link a:hover {
+    color: #000000; /* Black color on hover */
+}
+
+.logo {
+    height: 110px;
+    width: 140px;
+    background-image: url("l.avif");
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: -10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 20px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-link a {
+    position: relative; /* Ensure the anchor is positioned relative */
+}
+
+.nav-link a:hover::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    transition: all 0.3s ease;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Style for the page header */
+.container {
+    max-width: 800px;
+    margin-top: -240px;
+   
+    padding: 0 20px;
+}
+
+.blog-post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.post {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.post img {
+    flex: 0 0 40%;
+    width: 40%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+}
+.post img:hover {
+    transform: scale(1.05); /* Zoom in effect on hover */
+}
+.post .content {
+    flex: 0 0 60%;
+    padding: 20px;
+}
+
+.post h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.post h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post h2 a:hover {
+    text-decoration: none;
+}
+
+.post .meta {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.post p {
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #dd2828;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #abbed2;
+    color: black;
+}
+
+.paw-icon {
+    text-align: center;
+   margin-top: 140px;
+}
+
+.paw-icon img {
+    width: 50px; /* Adjust size as needed */
+}
+
+.happy-customers-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.feedback {
+    width: 20%;
+    text-align: center;
+}
+
+.comment {
+    background-color: #73c7e3;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.client-info {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.client-img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%; /* Make the image circular */
+    border: 4px double black; /* Double black outline */
+    overflow: hidden; /* Ensure image stays within circular boundaries */
+    margin-top: 25px;
+}
+
+.client-img img {
+    width: 100%; /* Make sure the image fills the circular container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing */
+}
+
+.client-name {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.checked {
+    color: orange;
+}
+
+.stars {
+    margin-bottom: 10px; /* Adjust margin as needed */
+    margin-top: 180px;
+}
+.testimonial {
+    text-align: center;
+    margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+.comment11 {
+    font-weight: bold;
+    max-width: 30%;
+    text-align: center;
+    margin-left: 60px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+}
+
+.full-review {
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.read-more {
+    color: red;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.client-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.client-img img {
+    border-radius: 50%; /* Make the image circular */
+    border: 2px solid orange; /* Add an orange border */
+    width: 100px; /* Adjust image width as needed */
+    height: 100px; /* Adjust image height as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.client-details {
+    text-align: center;
+}
+
+.client-name {
+    font-weight: bold;
+}
+
+.client-title {
+    color: gray; /* Set text color to gray */
+    margin-bottom: -10px;
+}

@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    height: 120px;
+    border-bottom: 1px solid #000000; /* Black border bottom */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav-link a:hover {
+    color: #000000; /* Black color on hover */
+}
+
+.logo {
+    height: 110px;
+    width: 140px;
+    background-image: url("l.avif");
+    background-size: cover;
+    margin-left: 70px;
+    margin-top: -10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 20px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-link a {
+    position: relative; /* Ensure the anchor is positioned relative */
+}
+
+.nav-link a:hover::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    transition: all 0.3s ease;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-button {
+    margin-right: 7vw;
+    padding: 1vh 2vw;
+    border-radius: 15px;
+    border: 2px solid #000000; /* Black border */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #000000; /* Black text color on hover */
+}
+
+.container-fluid {
+    padding-top: 90px;
+}
+
+.left-heading {
+    color: #000000; /* Black heading color */
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 60px;
+    font-family: lato;
+}
+
+.All-pets-button {
+    margin-right: 3vw;
+    padding: 1vh 2vw;
+    border-radius: 30px;
+    border: 4px solid #000000; /* Black border */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Montserrat;
+}
+
+.hero-image-text {
+    color: #000000; /* Black text color */
+    text-decoration: none;
+    font-size: 20px;
+    font-family: serif;
+}
+
+.read-more {
+    color: #000000; /* Black text color */
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: -10px;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: -50px;
+}
+.story-heading{
+    font-family: lato;
+    
+    font-weight: 600;
+    font-size: 50px;
+    color: #000000;
+    text-align: left;
+}
+.story-paragraph{
+    font-family: serif;
+    color: #000000; /* Black text color */
+    text-decoration: none;
+    font-size: 20px;
+    font-style: oblique;
+    text-align: left;
+}
+.achivements {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #222121;
+    color: #fff;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.achivement-item {
+    width: 120px;
+    height: 140px;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: #333;
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.achivement-item:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.achivement-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.promotion {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.promotion p {
+    font-size: 35px;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-family: serif;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin: 1rem auto;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #3e8e41;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.left-footer {
+    width: 50%;
+    padding-right: 20px;
+    margin-left: 20px; /* Added margin-left */
+}
+
+.right-footer {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list {
+    flex: 1;
+}
+
+.footer-list h3 {
+    margin-bottom: 10px;
+}
+
+.footer-list ul {
+    list-style-type: none;
+}
+
+.footer-list ul li {
+    margin-bottom: 5px;
+}
+
+.footer-images img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.subscribe-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Lorem-ipsum {
+    margin-bottom: 20px;
+}
+
+input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.social-icons a:hover {
+    color: #1892a7; /* Change color on hover */
+}
+
+/* Add this for PayPal and Mastercard images */
+.footer-images img {
+    width: 100px;
+    margin-top: 20px;
+    display: block; /* Ensures images are displayed in a block layout */
+}
+
+.email-input {
+    width: 150px;
+    background-color: #eee;
+}
+
+.bottom-footer {
+    text-align: center;
+    margin-top: 10px;
+}
+/* Add this to the CSS */
+.footer-list a {
+    transition: margin-left 0.3s ease; /* Add transition for smooth effect */
+}
+
+.footer-list a:hover {
+    margin-left: 7px; /* Move links 5 pixels to the right */
+}
